@@ -1,3 +1,7 @@
+# Ignore all markdown files that may contain sensitive info
+*.md
+# Ignore MongoDB setup file containing secrets
+MONGODB_SETUP.md
 # Dependencies
 node_modules/
 */node_modules/

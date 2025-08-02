@@ -30,10 +30,11 @@ Your application is failing to connect to MongoDB Atlas because the IP address i
    - If not, edit the user and set permissions to **"Atlas admin"**
 
 ### 3. **Update Connection String**
+;;
 
 Your current connection string:
 ```
-mongodb+srv://HOSPITAL:HOSPITAL@cluster0.zi949pc.mongodb.net/?retryWrites=true
+<REDACTED>
 ```
 
 **Make sure to add the database name:**
