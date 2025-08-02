@@ -1,18 +1,27 @@
 {
-  "name": "hospital-management-system",
+  "name": "medinexxa-hospital-management-system",
   "version": "1.0.0",
-  "description": "Hospital Management System with Backend, Frontend, and Dashboard",
+  "description": "MediNexxa Hospital Management System - A comprehensive MERN stack application for managing hospital operations, appointments, and patient care.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chifuy117/MediNexa_Hospital-manegment-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chifuy117/MediNexa_Hospital-manegment-system/issues"
+  },
+  "homepage": "https://github.com/chifuy117/MediNexa_Hospital-manegment-system#readme",
   "scripts": {
     "install:all": "npm install && cd frontend && npm install && cd ../dashboard && npm install",
+    "build": "npm run build:backend && npm run build:frontend && npm run build:dashboard",
     "build:backend": "cd backend && npm install",
     "build:frontend": "cd frontend && npm install && npm run build",
     "build:dashboard": "cd dashboard && npm install && npm run build",
-    "build:all": "npm run build:backend && npm run build:frontend && npm run build:dashboard",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:dashboard": "cd dashboard && npm run dev",
     "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:dashboard\"",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\" \"npm run start:dashboard\"",
     "start:backend": "cd backend && npm start",
     "start:frontend": "cd frontend && npm run preview",
     "start:dashboard": "cd dashboard && npm run preview"
@@ -24,16 +33,9 @@
     "react",
     "nodejs",
     "express",
-    "mongodb"
+    "mongodb",
+    "medinexxa"
   ],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
-  },
-  "workspaces": [
-    "backend",
-    "frontend", 
-    "dashboard"
-  ]
+  "license": "ISC"
 }
